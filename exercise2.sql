@@ -1,3 +1,6 @@
-SELECT *
+SELECT name,goals
 FROM players
-WHERE goals > 14;
+WHERE goals > (
+  SELECT AVG(goals)
+  FROM players
+);

@@ -1,3 +1,8 @@
-SELECT goals
+SELECT name
 FROM players
-WHERE name = 'Will';
+WHERE goals > (
+  -- Ketik statement SQL untuk mendapatkan skor milik Will dibaris bawah
+  SELECT goals
+  FROM players
+  WHERE name = 'Will'
+);
