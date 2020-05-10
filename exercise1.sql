@@ -1,5 +1,5 @@
-SELECT players.name, countries.name
+SELECT *
 FROM players
-JOIN countries
-ON players.country_id = countries.id
+JOIN teams
+ON players.previous_team_id = teams.id
 ;

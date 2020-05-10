@@ -1,2 +1,2 @@
 ALTER TABLE players
-ADD COLUMN country_id integer;
+ADD COLUMN previous_team_id integer;

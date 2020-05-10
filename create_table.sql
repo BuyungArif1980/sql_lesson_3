@@ -1,5 +1,4 @@
-CREATE TABLE countries(
-  id int,
-  name varchar,
-  rank int
+CREATE TABLE teams(
+  id int PRIMARY KEY,
+  name varchar
 );

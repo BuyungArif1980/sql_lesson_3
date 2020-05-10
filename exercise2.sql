@@ -1,6 +1,5 @@
-SELECT countries.name, SUM(goals)
+SELECT players.name AS "nama pemain", teams.name AS "tim (tahun lalu)"
 FROM players
-JOIN countries
-ON players.country_id = countries.id
-GROUP BY countries.name
-ORDER BY countries.name;
+JOIN teams
+ON players.previous_team_id = teams.id
+;
