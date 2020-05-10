@@ -1,4 +1,7 @@
-SELECT SUM(goals), country_id
+SELECT *
 FROM players
-GROUP BY country_id
-ORDER BY country_id;
+-- Tambahkan nama ke tabel gabungan
+JOIN countries
+-- Tambahkan kondisi join setelah ON
+ON players.country_id = countries.id
+;
