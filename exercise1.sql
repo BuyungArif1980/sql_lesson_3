@@ -1,8 +1,4 @@
-SELECT name
+-- Gunakan AS untuk menamai kolom "180 cm atau lebih"
+SELECT name AS "180 cm atau lebih"
 FROM players
-WHERE goals > (
-  -- Ketik statement SQL untuk mendapatkan skor milik Will dibaris bawah
-  SELECT goals
-  FROM players
-  WHERE name = 'Will'
-);
+WHERE height >= 180;
