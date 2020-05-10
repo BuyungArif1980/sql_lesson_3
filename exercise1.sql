@@ -1,4 +1,7 @@
--- Gunakan AS untuk menamai kolom "180 cm atau lebih"
-SELECT name AS "180 cm atau lebih"
-FROM players
-WHERE height >= 180;
+SELECT *
+FROM countries
+WHERE rank < (
+  SELECT rank
+  FROM countries
+  WHERE name = 'Jepang'
+);

@@ -1,6 +1,5 @@
-CREATE TABLE players(
+CREATE TABLE countries(
   id int,
   name varchar,
-  goals int,
-  height int
+  rank int
 );
