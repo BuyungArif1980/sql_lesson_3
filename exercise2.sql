@@ -1,3 +1,6 @@
--- Gunakan AS untuk menamai kolom "total skor tim"
-SELECT SUM(goals) AS "total skor tim"
-FROM players;
+SELECT countries.name, SUM(goals)
+FROM players
+JOIN countries
+ON players.country_id = countries.id
+GROUP BY countries.name
+ORDER BY countries.name;
