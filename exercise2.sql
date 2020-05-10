@@ -1,4 +1,5 @@
-SELECT players.name AS "nama pemain", teams.name AS "tim (tahun lalu)"
+SELECT *
 FROM players
-LEFT JOIN teams
-ON players.previous_team_id = teams.id;
+JOIN countries
+ON players.country_id = countries.id
+WHERE players.height >=180 AND countries.name = 'Jepang';
